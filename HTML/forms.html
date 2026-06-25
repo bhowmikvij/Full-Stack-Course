@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <form action="index.php" method="post">
+
+            <label for="username">username:</label>
+            <input type="text" id="username" placeholder="gamename" minlength="6" maxlength="15" required> <br>
+
+            <label for="password">password:</label>
+            <input type="password" id="password"> <br>
+            
+            <label for="email">email:</label>
+            <input type="email" id="email" placeholder="abc123@gmail.com"> <br>
+
+            <label for="Mr.">Mr.</label>
+            <input type="radio" name="title" id="Mr.">
+            <label for="Ms.">Ms.</label>
+            <input type="radio" name="title" id="Ms.">
+            <label for="Others.">Others.</label>
+            <input type="radio" name="title" id="Others."> <br>
+
+            <label for="payment">payment</label>
+            <select id="payment">
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="giftcard">giftcard</option>
+            </select> <br>
+
+            <label for="comment">comment</label>
+            <textarea id="comment" rows="4" cols="30"></textarea> <br>
+
+            <input type="reset"> <br>
+            <input type="submit">
+
+    </form>
+</body>
+</html>
+
+<!-- index.php ka kaam ha ki zaha pe data store hoga  -->
+<!-- METHOD--= POST is used for confidencial information like username and password -->
+<!-- METHOD--= GET is used for insensitive data -->
+<!-- placeholder use hota ha jab hum username/password/email likhne jaye to chota sa already likha ho redirect karne  ke liye -->
+<!-- radio use hota ha Mr. ke aage select karne wala option -->
+<!-- title use hota ha taki pata laga paye Mr., Ms., Others. sare ek he option ha or unme se ek he select hoga -->
+<!--  -->
