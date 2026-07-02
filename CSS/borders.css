@@ -1,0 +1,9 @@
+h1{
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 25px;
+    border-color: rgb(248, 8, 8);
+}
+p{
+    border-bottom: 4px solid;
+}
