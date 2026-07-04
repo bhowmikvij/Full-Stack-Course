@@ -6,4 +6,7 @@ h1{
 }
 p{
     border-bottom: 4px solid;
+    border-right: 4px dotted;
+    border-top: 4px solid;
+    border-left: 4px dotted;
 }
