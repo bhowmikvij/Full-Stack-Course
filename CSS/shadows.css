@@ -3,4 +3,11 @@ h1{
 } 
 /* 20px bottom me leke jata ha  */
 /* 10px wala right side me leke jata ha */
-/* 5px wala blur karta ha */
+/* 5px wala blur karta ha */ 
+
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    box-shadow: 3px 4px 100px;
+}
