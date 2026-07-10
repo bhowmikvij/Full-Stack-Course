@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myh1">Welcome</h1>
+    <label>username: </label>
+    <input id="MYTEXT"><br><br>
+    <button id="mysubmit">submit</button>
+</body>
+</html>
+
+<script>
+    // How to accept user input
+    // 1. EASY WAY = window prompt
+    // 2. PROFESIONAL WAY = HTML textbox
+
+    // let username;
+    // username = window.prompt("What's your username?");
+    // console.log(username);
+
+    let username;
+
+    document.getElementById("mysubmit").onclick = function(){
+        username = document.getElementById("MYTEXT").value;
+        // console.log(username); 
+
+        // Now we are trying something new 
+        // now if we will write my name in username and submit it.
+        // it will refresh welcome and type hello whatever name we put like bhowmik
+
+        document.getElementById("myh1").textContent = `Hello ${username}`
+        
+    }
+    
+</script>
