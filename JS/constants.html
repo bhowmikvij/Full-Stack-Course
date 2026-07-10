@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Enter the radius of circle:</h2>
+    <label>radius: </label>
+    <input type="text" id="mytext"><br><br>
+    <button id="mysubmit">Submit</button>
+    <h3 id="myh3"></h3>
+    <h3 id="myh32"></h3>
+
+</body>
+</html>
+
+<script>
+
+    // const = a variable that can't be changed
+
+    // let PI = 3.14;
+    // let radius;
+    // let circumference;
+    // let area;
+
+    // // if we use const instead of let so const will not allow to change the value.
+    // // like if we write PI=340 in another line so it will consider early const PI value
+
+    // // radius = window.prompt("Enter the radius:");
+    // circumference = 2*PI*radius;
+    // radius = Number(radius);
+    // area = PI*radius**2
+
+    // console.log("circumference:", circumference);
+    // console.log("area:", area);
+
+    // --------------------------------------------------------------------------------------------------------------
+    
+    const PI = 3.14;
+    let radius;
+    let circumference;
+    let area;
+
+    document.getElementById("mysubmit").onclick = function(){
+        radius = document.getElementById("mytext").value;
+        radius = Number(radius);
+        circumference = 2 * PI * radius;
+        area = PI*radius**2;
+        document.getElementById("myh3").textContent = circumference + " cm";
+        document.getElementById("myh32").textContent = area + " cm";
+
+    }
+</script>
