@@ -6,7 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <label for="">Enter Your Marks:</label> <br>
+    <input type="text" id="mytext"> <br> <br>
+    <button id="mysubmit">Submit</button>
+    <p id="resultElement"></p>
 </body>
 </html>
 
@@ -31,22 +34,53 @@
     // }
 
 
-    let age = 18;
-    let hasLicense = false;
+    // let age = 18;
+    // let hasLicense = false;
 
-    if (age >= 18) {
-        console.log("You are old enough to drive");
+    // if (age >= 18) {
+    //     console.log("You are old enough to drive");
         
-        if (hasLicense) {
-            console.log("You have license");    
+    //     if (hasLicense) {
+    //         console.log("You have license");    
+    //     }
+    //     else{
+    //         console.log("You dont have license");
+    //     }
+    // }
+
+    // else{
+    //     console.log("You must be above 18 to apply for license");
+    // }
+
+    const mytext = document.getElementById("mytext")
+    const mysubmit = document.getElementById("mysubmit")
+    const resultElement = document.getElementById("resultElement")
+
+    let marks;
+    
+    mysubmit.onclick = function(){
+
+        marks = mytext.value;
+        marks = Number(marks);
+
+        if (marks >= 85) {
+            resultElement.textContent = `A GRADE`
         }
-        else{
-            console.log("You dont have license");
+        else if (marks >= 70) {
+            resultElement.textContent = `B GRADE`
+        }
+        else if (marks >= 55) {
+            resultElement.textContent = `C GRADE`
+        } 
+        else if (marks >= 40) {
+            resultElement.textContent = `D GRADE`
+        }
+        else {
+            resultElement.textContent = `FAIL`
         }
     }
 
-    else{
-        console.log("You must be above 18 to apply for license");
-    }
+
+
 
 </script>
