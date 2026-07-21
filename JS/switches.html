@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    // SWITCH = can be an efficient replacement to many else if statements
+
+    let scoreCard = 98;
+    let grade;
+
+    switch(true){
+        case scoreCard >= 90:
+            grade = "A";
+            break;
+        case scoreCard >= 80:
+            grade = "B"; 
+            break;
+        case scoreCard >= 70:
+            grade = "C";
+            break;  
+        case scoreCard >= 60:
+            grade = "D"; 
+            break;
+        default:
+            grade = "F";
+    }
+
+    console.log(grade);
+    
+
+</script>
