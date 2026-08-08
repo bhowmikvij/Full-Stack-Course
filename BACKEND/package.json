@@ -1,0 +1,29 @@
+{
+  "name": "full-stack-course",
+  "version": "1.0.0",
+  "description": "a basic app to deploy",
+  "keywords": [
+    "node",
+    "chai"
+  ],
+  "homepage": "https://github.com/bhowmikvij/Full-Stack-Course#readme",
+  "bugs": {
+    "url": "https://github.com/bhowmikvij/Full-Stack-Course/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhowmikvij/Full-Stack-Course.git"
+  },
+  "license": "ISC",
+  "author": "Bhowmik Vij",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
