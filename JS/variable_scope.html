@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    // variable scope = where a variable is recognized
+    //                  and accessible (local vs global)
+
+    let x = 2;
+
+    function2();
+
+    function function1(){
+        let x = 1;
+        console.log(x);
+    }
+
+    function function2(){
+        let x = 3;
+        console.log(x);
+    }
+
+    // first function will be seen inside function 2 x=3
+    // but if it was not ther then there will be x=2
+    
+
+
+</script>
