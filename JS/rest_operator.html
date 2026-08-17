@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    // rest parameters = (...rest) allow a function work with a variable
+    //                   number of arguments by bunding them into an array
+
+    //                   spread = expands an array into seperate elements
+    //                   rest = bundles seperate elements into an array
+
+    function openFridge(...foods){
+        console.log(...foods);
+    }
+    function getFood(...foods){
+        return foods;
+    }
+
+    const food1 = "pizza";
+    const food2 = "burger";
+    const food3 = "sushi";
+    const food4 = "naan";
+
+    // openFridge(food1, food2, food3, food4);
+
+    const foods = getFood(food1, food2, food3, food4)
+
+    console.log(foods);
+
+
+</script>
