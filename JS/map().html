@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // .map() = accepts a callback and applies that function
+    //          to each element of an array, then return a new array
+
+    const numbers = [1,2,3,4,5];
+    const squares = numbers.map(square);
+    const cubes = numbers.map(cube);
+
+    console.log(cubes);
+    
+
+    function square(element){
+        return Math.pow(element, 2)
+    }
+
+    function cube(element){
+        return Math.pow(element, 3)
+    } // (5) [1, 8, 27, 64, 125]
+
+</script>
