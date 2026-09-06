@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    // destructuring = extract values from arrays and objects,
+    //                 then assign them to variables in a convenient way
+    //                 [] = to perform array destructuring
+    //                 {} = to perform object destructuring
+
+    // ----------- EXAMPLE 1 -------------
+    // SNAP THE VALUE OF TWO VARIABLES
+
+    // let a = 1;
+    // let b = 2;
+
+    // [a, b] = [b, a]
+
+    // console.log(b); // 1
+    // console.log(a); // 2
+
+    // ----------- EXAMPLE 2 -------------
+    // SNAP 2 ELEMENTS IN AN ARRAY
+
+    // const colors = ["red", "blue", "green", "orange", "black"];
+
+    // [colors[0], colors[4]] = [colors[4], colors[0]];
+    
+    // console.log(colors); // ['black', 'blue', 'green', 'orange', 'red']
+
+    // ----------- EXAMPLE 3 -------------
+    // ASSIGN ARRAY ELEMENTS TO VARIABLES
+
+    // const colors = ["red", "blue", "green", "orange", "black"];
+
+    // const [firstColor, secondColor, thirdColor, ...extraColors] = colors;
+    
+    // console.log(firstColor); // red
+    // console.log(secondColor); // blue
+    // console.log(thirdColor); // green
+    // console.log(extraColors); // ['orange', 'black']
+
+    // ----------- EXAMPLE 4 -------------
+    // EXTRACT VALUES FROM OBJECTS
+
+    // const person1 = {
+    //     firstName : "bhowmik",
+    //     lastName : "vij",
+    //     age : 19,
+    //     job : "software",
+    // }
+
+    // const person2 = {
+    //     firstName : "bhowmikk",
+    //     lastName : "vijj",
+    //     age : 199,
+    // }
+
+    // const {firstName, lastName, age, job= "Unemployed"} = person2
+
+    // console.log(firstName); // bhowmikk
+    // console.log(lastName); // vijj
+    // console.log(age); // 199
+    // console.log(job); // Unemployed
+
+    // ----------- EXAMPLE 5 -------------
+    // DESTRUCTURE IN FUNCTION PARAMETERS
+
+    function displayPerson({firstName, lastName, age, job = "Unemployed"}){
+        console.log(`name: ${firstName} ${lastName}`);
+        console.log(`age: ${age}`);
+        console.log(`job: ${job}`);
+    }
+
+    const person1 = {
+        firstName : "bhowmik",
+        lastName : "vij",
+        age : 19,
+        job : "software",
+    }
+
+    const person2 = {
+        firstName : "bhowmikk",
+        lastName : "vijj",
+        age : 199,
+    }
+
+    displayPerson(person1) // job will be take as software not unemployed beacude unemployed was the extra the main was software
+
+</script>
