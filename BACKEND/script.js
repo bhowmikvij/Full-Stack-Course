@@ -26,3 +26,11 @@ var newarr = arr.filter(function(val){
 })
 console.log(newarr);
 // [4,5]
+
+// find
+var arr = [1,2,3,4,5];
+var newarr = arr.find(function(val){
+    if (val == 2) return val;
+})
+console.log(newarr);
+
