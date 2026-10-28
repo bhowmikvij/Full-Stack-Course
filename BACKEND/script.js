@@ -4,6 +4,11 @@
 // async js coding
 // forEach, map, filter, find, indexOf
 
+
+
+// ARRAYS
+
+
 // // forEach
 // var arr = [1,2,3,4,5];
 // arr.forEach(function(val){
@@ -36,6 +41,8 @@
 
 
 
+// OBJECTS
+
 
 var obj = {
     name: "Bhowmik Vij",
@@ -43,3 +50,17 @@ var obj = {
 }  
 Object.freeze(obj);
 obj.age = 25
+
+
+
+// RETURN
+
+function abcd(){
+    return 12;
+}
+var ans = abcd();
+
+
+
+// ASYNC JS
+
