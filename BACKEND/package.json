@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "🚀 Full Stack Development Journey",
+  "homepage": "https://github.com/bhowmikvij/Full-Stack-Course#readme",
+  "bugs": {
+    "url": "https://github.com/bhowmikvij/Full-Stack-Course/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhowmikvij/Full-Stack-Course.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
