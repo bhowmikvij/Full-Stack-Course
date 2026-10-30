@@ -64,3 +64,11 @@ var ans = abcd();
 
 // ASYNC JS
 
+// line by line code chale isey kahte hai synchronous code
+
+// jo bhi code asunc nature ka ho,usey side stack mein bhej
+// do and agle code ko chalao jo bhi sync nature ka ho, jab bhi
+// saara syn code, chal jaye, tab check karo ki async code
+// complete hua ya nhi and agar wo complete hua ho 
+// usey main stack mein lao and chala do 
+
