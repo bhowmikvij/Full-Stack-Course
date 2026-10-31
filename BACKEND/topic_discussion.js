@@ -205,3 +205,27 @@ server.listen(3000);
 
 
 
+// NPM understanding
+
+// npm - node package manager
+
+
+// installing and unistalling anything basics & advanced
+// install -> npm i packageKaNaam
+// unistall -> npm uninstall packageKaNaam
+
+
+// understanding node_modules
+
+
+// dependencies- packages and packages ki dependencies
+// devdependencies - aise packages jo sirf development me kaam
+//                   aayenge par jab app ban jayega aur uplaod ho 
+//                   jayega tab hum in packages ko use nhi kar rhe honge
+
+
+// scripts - understanding default scripts PATH and custom scripts
+
+
+
+console.log("hello world");
