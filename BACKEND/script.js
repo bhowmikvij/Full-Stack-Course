@@ -32,9 +32,6 @@ app.get("/profile", function(req,res){
   res.send("Champion uska coach bhi");
 })
 
-//   res.send('Hello World')
-// })
-
 app.listen(3000);
 
 // nodemon ek npm package ha jo automatically server ko, 
@@ -45,3 +42,62 @@ app.listen(3000);
 // Middleware
 
 
+// jab bhi server request accept karta ha wha se route ke, 
+// beech pohuchne tak agar aap us request ko beech me rokte ho,
+// aur kuch perform karte ho to ye element middleware khelata ha 
+
+const express = require('express');
+const app = express()
+
+app.use(function(req, res, next){
+  console.log("middleware called");
+  next();
+});
+
+app.use(function(req, res, next){
+  console.log("middleware dubara called");
+  next();
+});
+
+app.get("/", function(req,res){
+  res.send("Champion hu mein");
+})
+
+app.get("/profile", function(req,res){
+  res.send("Champion uska coach bhi");
+})
+
+
+app.listen(3000);
+
+
+
+// Error handling
+
+const express = require('express');
+const app = express()
+
+app.use(function(req, res, next){
+  console.log("middleware called");
+  next();
+});
+
+app.use(function(req, res, next){
+  console.log("middleware dubara called");
+  next();
+});
+
+app.get("/", function(req,res){
+  res.send("Champion hu mein");
+})
+
+app.get("/profile", function(req,res,next){
+  return next(new Error("Something went wrong!")); // ye frontend pe show hoga
+})
+
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke!'); // ye backend pe show hoga
+});
+
+app.listen(3000);
