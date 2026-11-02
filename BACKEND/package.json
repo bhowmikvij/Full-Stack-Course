@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "cookie-parser": "^1.4.7",
+    "ejs": "^7.0.2",
     "express": "^5.3.0",
     "one-liner-joke": "^1.2.2"
   },
