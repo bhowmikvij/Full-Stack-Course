@@ -511,3 +511,30 @@ app7.listen(3000,function(){
 
 
 
+// DATA Storage:
+//      aisa kuch jaha par hum saare users ki info store kar skte hai
+
+
+// TYPES OF DBS
+//      SQL | NoSQL
+//      NoSQL - MongoDB = Objects ke form me data store karga like js
+
+// What and Why
+
+
+// Terminologies - collections, documents, schemas, keys, models
+
+// There are two types of server in Backend
+// Application Server, Database Server
+
+// Application Server
+
+// Database -> Collections -> Document
+// Code
+// -------------------------------------------------
+// CODE                  DATABASE
+// -------------------------------------------------
+// mongoose.connect -> database create
+// model create     -> collection
+// CREATE code      -> document
+
